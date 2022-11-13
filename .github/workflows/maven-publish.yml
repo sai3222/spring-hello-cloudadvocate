@@ -39,3 +39,7 @@ jobs:
       with:
         name: github-actions-artifact
         path: artifacts
+        
+    - name: checking artifact
+      run: |
+        ls -la /home/runer/work
