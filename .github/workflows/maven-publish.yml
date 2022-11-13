@@ -42,4 +42,4 @@ jobs:
         
     - name: checking artifact
       run: |
-        ls -la /home/runer/work
+        ls -la /home/runner/work
