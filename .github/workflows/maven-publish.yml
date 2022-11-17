@@ -14,10 +14,10 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Maven
-        run: mvn clean package
+        run: mvn install -DskipTests
       - name: create a directory
         run: mkdir artifact && cp target/*.jar artifact
-      - run: ls
+      - run: cd artifact && ls -la
         
       
         
