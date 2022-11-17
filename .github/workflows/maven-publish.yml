@@ -1,6 +1,7 @@
 name: AWS example workflow
 on:
   push
+    branches: ["main"]
 env:
   BUCKET_NAME : "saikrishna1122"
   AWS_REGION : "ap-south-1"
@@ -34,4 +35,4 @@ jobs:
       # Upload a file to AWS s3
       - name:  Copy index.html to s3
         run: |
-          aws s3 cp ./artifact s3://${{ env.BUCKET_NAME }}/
+          aws s3 cp ./artifact s3://${{ env.BUCKET_NAME }}/${{ branches }}
