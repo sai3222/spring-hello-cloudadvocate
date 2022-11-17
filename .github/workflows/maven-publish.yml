@@ -1,6 +1,6 @@
 name: AWS example workflow
 on:
-  push
+  push:
     branches: [ main ]
 env:
   BUCKET_NAME : "saikrishna1122"
